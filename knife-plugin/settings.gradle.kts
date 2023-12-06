@@ -1,8 +1,4 @@
 @file:Suppress("UnstableApiUsage")
-
-include(":test")
-
-
 pluginManagement {
     repositories {
         google()
@@ -18,7 +14,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "GradleKnife"
-include(":app")
-include(":knife-sdk")
-includeBuild("./knife-plugin")
+rootProject.name = "knife-plugin"
+include(":testPlugin")
+include(":methodTrace")

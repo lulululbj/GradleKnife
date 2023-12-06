@@ -1,5 +1,8 @@
 package luyao.gradle.knife;
 
+
+import luyao.plugin.knife.MethodTimeCounter;
+
 /**
  * Description:
  * Author: luyao
@@ -8,8 +11,8 @@ package luyao.gradle.knife;
 public class Test {
 
     public static void main(String[] args) throws InterruptedException {
-        TimeCounter.start("tag");
+        MethodTimeCounter.start("tag");
         Thread.sleep(1000);
-        TimeCounter.end("tag");
+        MethodTimeCounter.end("tag");
     }
 }
