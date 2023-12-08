@@ -28,7 +28,7 @@ class MethodTracePlugin : Plugin<Project> {
 
             variant.instrumentation.transformClassesWith(
                 MethodTraceTransform::class.java,
-                InstrumentationScope.ALL
+                InstrumentationScope.PROJECT
             ) { params ->
                 val config = MethodTraceConfigParam(
                     methodTraceConfig.traceTime,

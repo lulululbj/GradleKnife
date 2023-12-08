@@ -135,7 +135,7 @@ object MethodTraceUtil {
 
         // 调用 MethodParamTrace.onMethodTraced() 打印日志
         mv.visitMethodInsn(
-            AdviceAdapter.INVOKESTATIC,
+            Opcodes.INVOKESTATIC,
             "luyao/plugin/knife/MethodParamTrace",
             "onMethodTraced",
             "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V",

@@ -24,8 +24,9 @@ internal abstract class MethodTraceTransform : AsmClassVisitorFactory<MethodTrac
         classContext: ClassContext,
         nextClassVisitor: ClassVisitor
     ): ClassVisitor {
-        return MethodTraceClassVisitor(nextClassVisitor, parameters.get().config.get())
-//        return MethodTraceClassNode(nextClassVisitor, parameters.get().config.get())
+
+//        return MethodTraceClassVisitor(nextClassVisitor, parameters.get().config.get())
+        return MethodTraceClassNode(nextClassVisitor, classContext.currentClassData.className, parameters.get().config.get())
     }
 
     /**

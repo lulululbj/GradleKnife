@@ -44,10 +44,9 @@ class MainActivity : AppCompatActivity() {
         return showTime to text
     }
 
-    @MethodTrace(traceParamsAndReturnValue = true)
     private fun testMethodTrace2(tag: String, list: List<String>): List<String> {
         list.forEach {
-            Log.e(tag, it)
+            Thread.sleep(100)
         }
         return list.map { it.repeat(2) }
     }

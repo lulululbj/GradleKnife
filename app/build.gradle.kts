@@ -11,8 +11,7 @@ methodTrace {
     traceTime = true
     traceParamsAndReturnValue = true
     traceMethods = listOf(
-        TraceMethod("java.lang.System", "load"),
-        TraceMethod("java.lang.System", "loadLibrary"),
+        TraceMethod("luyao.gradle.knife.MainActivity", "testMethodTrace2"),
     )
 }
 
